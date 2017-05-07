@@ -10,12 +10,31 @@
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-  <header>
-    <div class="inner inner-bg blur"></div>
-    <h2 class="inner inner-title">重庆印象</h2>
-  </header>
-  <div class="container">
-    <section class="introduce">
+  <div class="sidebar">
+    <a href="#secondPage" class="nav">朝天门</a>
+    <a class="nav">朝天门</a>
+    <a class="nav">朝天门</a>
+    <a class="nav">朝天门</a>
+    <a class="nav">朝天门</a>    
+  </div>
+  <div id="fullpage" class="container">
+    <section class="section introduce" id="section0">
+      <div class="header">
+
+      </div>
+    </section>
+    <section class="section introduce brown" id="section1">
+      <div class="content">
+        <div class="fragment-outer-wrap">
+          <div id="frag-1" class="fragment-wrap" style="background-image: url(./assets/images/tianmen.jpg)"></div>
+        </div>
+        <div class="text-wrap">
+          <h2 class="title">朝天门</h2>
+          <p class="text">重庆朝天门位于重庆渝中区渝中半岛的嘉陵江与长江交汇处，是重庆以前的十七座古城门之一，南宋时期宋朝定都临安，即今天的杭州，那时有圣旨传来是经长江到达朝天门，所以才有了朝天门这个名字。朝天门左侧嘉陵江纳细流汇小川，纵流1119千米，于此注入长江。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section introduce" id="section2">
       <div class="content">
         <div class="fragment-outer-wrap">
           <div id="frag-1" class="fragment-wrap" style="background-image: url(./assets/images/tianmen.jpg)"></div>
@@ -27,6 +46,7 @@
       </div>
     </section>
   </div>
+  <script src="./assets/js/fullpage.min.js"></script>  
   <script src="./assets/js/little_fram.js" type="text/javascript"></script>
   <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
   <script>
@@ -49,6 +69,11 @@
 					});
 				});
 			})();
+      fullpage.initialize('#fullpage', {
+		    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		    menu: '#menu',
+		    css3:true
+	    });
   </script>
 </body>
 </html>
