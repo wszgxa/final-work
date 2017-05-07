@@ -23,7 +23,7 @@
     <section class="section introduce brown" id="section1">
       <div class="content">
         <div class="fragment-outer-wrap">
-          <div id="frag-1" class="fragment-wrap" style="background-image: url(./assets/images/tianmen.jpg)"></div>
+          <div id="frag-1" class="fragment-wrap ff" style="background-image: url(./assets/images/tianmen.jpg)"></div>
         </div>
         <div class="text-wrap">
           <h2 class="title">朝天门</h2>
@@ -33,7 +33,7 @@
     </section>
     <section class="section introduce black" id="section2">
       <div class="content">
-        <div class="fragment-outer-wrap">
+        <div class="fragment-outer-wrap ff">
           <div id="frag-2" class="fragment-wrap" style="background-image: url(./assets/images/hongyadong.jpg)"></div>
         </div>
         <div class="text-wrap">
@@ -81,7 +81,7 @@
   <script src="./assets/js/fullpage.min.js"></script>
   <script>
     (function() {
-      imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
+      imagesLoaded(document.querySelectorAll('.ff'), { background: true }, function() {
 					document.body.classList.remove('loading');
 					new FragmentsFx(document.getElementById('frag-1'), {
 						fragments: 30,
