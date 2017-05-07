@@ -12,16 +12,15 @@
 <body>
   <div class="sidebar">
     <a href="#secondPage" class="nav">朝天门</a>
-    <a class="nav">朝天门</a>
-    <a class="nav">朝天门</a>
-    <a class="nav">朝天门</a>
+    <a href="#3rdPage" class="nav">洪崖洞</a>
+    <a href="#4thpage" class="nav">解放碑</a>
+    <a href="#lastPage" class="nav">火锅</a>
     <a class="nav">朝天门</a>    
   </div>
   <div id="fullpage" class="container">
     <section class="section introduce" id="section0">
-      <div class="header">
-
-      </div>
+      <div class="header bg blur"></div>
+      <h2 class="htitle">重庆印象</h2>
     </section>
     <section class="section introduce brown" id="section1">
       <div class="content">
@@ -34,14 +33,47 @@
         </div>
       </div>
     </section>
-    <section class="section introduce" id="section2">
+    <section class="section introduce black" id="section2">
       <div class="content">
         <div class="fragment-outer-wrap">
-          <div id="frag-1" class="fragment-wrap" style="background-image: url(./assets/images/tianmen.jpg)"></div>
+          <div id="frag-2" class="fragment-wrap" style="background-image: url(./assets/images/hongyadong.jpg)"></div>
         </div>
         <div class="text-wrap">
-          <h2 class="title">朝天门</h2>
-          <p class="text">重庆朝天门位于重庆渝中区渝中半岛的嘉陵江与长江交汇处，是重庆以前的十七座古城门之一，南宋时期宋朝定都临安，即今天的杭州，那时有圣旨传来是经长江到达朝天门，所以才有了朝天门这个名字。朝天门左侧嘉陵江纳细流汇小川，纵流1119千米，于此注入长江。</p>
+          <h2 class="title">洪崖洞</h2>
+          <p class="text">洪崖洞，位于重庆直辖市核心商圈解放碑沧白路，长江、嘉陵江两江交汇的滨江地带，坐拥城市旅游景观、商务休闲景观和城市人文景观于一体。以具巴渝传统建筑特色的“吊脚楼”风貌为主体，依山就势，沿江而建，解放碑直达江滨。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section introduce black" id="section2">
+      <div class="content">
+        <div class="fragment-outer-wrap">
+          <div id="frag-3" class="fragment-wrap" style="background-image: url(./assets/images/jiefangbei.jpg)"></div>
+        </div>
+        <div class="text-wrap">
+          <h2 class="title">解放碑</h2>
+          <p class="text">解放碑是重庆市的标志建筑物之一，位于重庆市渝中区商业区中心部位，民族路、民权路、邹容路交汇的十字路口处。纪念碑高27.5米，有旋梯可达顶端；碑顶设时钟、方向标志和风速风向仪。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section introduce black" id="section2">
+      <div class="content">
+        <div class="fragment-outer-wrap">
+          <div id="frag-4" class="fragment-wrap" style="background-image: url(./assets/images/huoguo.jpg)"></div>
+        </div>
+        <div class="text-wrap">
+          <h2 class="title">重庆火锅</h2>
+          <p class="text">重庆火锅，又称为毛肚火锅或麻辣火锅，是中国传统饮食方式，起源于明末清初的重庆嘉陵江畔、朝天门等码头船工纤夫的粗放餐饮方式，原料主要是牛毛肚、猪黄喉、鸭肠、牛血旺等。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section introduce black" id="section2">
+      <div class="content">
+        <div class="fragment-outer-wrap">
+          <div id="frag-5" class="fragment-wrap" style="background-image: url(./assets/images/wulong.jpeg)"></div>
+        </div>
+        <div class="text-wrap">
+          <h2 class="title">武隆天坑</h2>
+          <p class="text">重庆武隆后坪乡天坑群景区内的阎王沟岩溶峡谷全长2300m，总深度约500m，是盲谷式现代峡谷，谷深林幽，特别是下段，谷底深切，两岸下部近直立，宽度及小，气势逼人，行走其中，感受别样，具有一定的观赏价值，对了解该地区的水文、地貌发育演化史也有重要意义。</p>
         </div>
       </div>
     </section>
@@ -67,10 +99,66 @@
 						parallax: true,
 						randomParallax: {min: 10, max: 60}
 					});
+          new FragmentsFx(document.getElementById('frag-2'), {
+						fragments: 30,
+						boundaries: {x1: 50, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 40},
+							left: {min: 0,max: 70},
+							dimension: {
+								width: {min: 10,max: 50, fixedHeight: 0.5},
+								height: {min: 1,max: 3, fixedWidth: 3}
+							}
+						},
+						parallax: true,
+						randomParallax: {min: 10, max: 60}
+					});
+          new FragmentsFx(document.getElementById('frag-3'), {
+						fragments: 30,
+						boundaries: {x1: 50, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 40},
+							left: {min: 0,max: 70},
+							dimension: {
+								width: {min: 10,max: 50, fixedHeight: 0.5},
+								height: {min: 1,max: 3, fixedWidth: 3}
+							}
+						},
+						parallax: true,
+						randomParallax: {min: 10, max: 60}
+					});
+          new FragmentsFx(document.getElementById('frag-4'), {
+						fragments: 30,
+						boundaries: {x1: 50, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 40},
+							left: {min: 0,max: 70},
+							dimension: {
+								width: {min: 10,max: 50, fixedHeight: 0.5},
+								height: {min: 1,max: 3, fixedWidth: 3}
+							}
+						},
+						parallax: true,
+						randomParallax: {min: 10, max: 60}
+					});
+          new FragmentsFx(document.getElementById('frag-5'), {
+						fragments: 30,
+						boundaries: {x1: 50, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 40},
+							left: {min: 0,max: 70},
+							dimension: {
+								width: {min: 10,max: 50, fixedHeight: 0.5},
+								height: {min: 1,max: 3, fixedWidth: 3}
+							}
+						},
+						parallax: true,
+						randomParallax: {min: 10, max: 60}
+					});
 				});
 			})();
       fullpage.initialize('#fullpage', {
-		    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
 		    menu: '#menu',
 		    css3:true
 	    });
